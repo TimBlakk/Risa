@@ -226,14 +226,16 @@
   <div class="cart-body">
     <p id="cart-empty">Nothing here yet. Tap + on any dish to add it.</p>
     <ul id="cart-list"></ul>
+    <div class="cart-extra">
+      <label for="cart-notes">Notes (optional)</label>
+      <textarea id="cart-notes" rows="2" maxlength="200" placeholder="Allergies or anything else we should know"></textarea>
+      <button id="cart-clear" class="linkbtn" type="button">Clear order</button>
+    </div>
   </div>
   <div class="cart-foot">
-    <label for="cart-notes">Notes (optional)</label>
-    <textarea id="cart-notes" rows="2" maxlength="200" placeholder="Allergies or anything else we should know"></textarea>
     <p class="sum"><span>Subtotal</span><b id="cart-total">GHS 0</b></p>
     <p class="small">Delivery fee is not included.</p>
     <a id="cart-send" class="btn btn-gold" href="#" target="_blank" rel="noopener">Send order on WhatsApp</a>
-    <button id="cart-clear" class="linkbtn" type="button">Clear order</button>
   </div>
 </dialog>
 
