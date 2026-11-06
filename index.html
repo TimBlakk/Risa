@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RISA | Noodles, Pasta, Wings and Salad Bowls, Delivered</title>
+<meta name="description" content="RISA: craving noodles, buldak, creamy penne, glossy wings and fresh salad bowls? See the menu and order on WhatsApp. Delivery Friday to Sunday, 12pm to 8pm.">
+<meta name="theme-color" content="#0a0a0a">
+<!-- TODO after you get a domain: add <link rel="canonical" href="https://YOUR-DOMAIN/"> and make og:image an absolute URL -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="RISA | Crafted for Cravings">
+<meta property="og:description" content="Noodles, pasta, wings and salad bowls. Order on WhatsApp.">
+<meta property="og:image" content="images/hero.webp">
+<link rel="icon" href="images/logo-small.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dancing+Script:wght@600;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FoodEstablishment","name":"RISA","slogan":"Crafted for Cravings","telephone":"+233241280476","image":"images/hero.webp","servesCuisine":["Noodles","Pasta","Chicken wings","Salads"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday","Sunday"],"opens":"12:00","closes":"20:00"}]}
+</script>
+<link rel="stylesheet" href="css/styles.css">
+<noscript><style>.panel{display:grid!important}.tabs{display:none}</style></noscript>
+</head>
+<body data-heat="mild">
+<a class="skip" href="#menu">Skip to menu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#top" aria-label="RISA home"><img src="images/logo-small.webp" width="360" height="248" alt="RISA, Crafted for Cravings"></a>
+    <nav aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#order">Order</a>
+      <a class="btn btn-gold cart-trigger" data-wa="" href="https://wa.me/233241280476">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <picture>
+      <source media="(max-width:800px)" srcset="images/hero-800.webp">
+      <img class="bg" src="images/hero.webp" width="1600" height="900" fetchpriority="high" alt="A steaming black bowl of stir-fried noodles with grilled chicken, prawns and peppers">
+    </picture>
+    <div class="wrap">
+      <img class="logo" src="images/logo.webp" width="800" height="552" alt="RISA, Crafted for Cravings">
+      <p class="status" id="status" role="status">Checking opening hours…</p>
+      <h1 id="hero-title">Craving something? We’ve got it.</h1>
+      <p>Noodles, pasta, wings, salad bowls and sweet treats, delivered to you Friday to Sunday.</p>
+      <div class="actions">
+        <a class="btn btn-gold" data-wa="" href="https://wa.me/233241280476">Order on WhatsApp</a>
+        <a class="btn btn-line" href="#menu">See the menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="heat wrap" aria-labelledby="heat-title">
+    <h2 id="heat-title">How hot do you like it?</h2>
+    <p>Pick your usual heat. Spicy dishes start here, and you can change the level for each dish in your order.</p>
+    <fieldset>
+      <legend>Spice level</legend>
+      <input type="radio" name="heat" id="h-mild" value="Mild" checked><label for="h-mild">🌶 Mild</label>
+      <input type="radio" name="heat" id="h-spicy" value="Spicy"><label for="h-spicy">🌶 Spicy</label>
+      <input type="radio" name="heat" id="h-hot" value="Hot"><label for="h-hot">🌶🌶🌶 Hot</label>
+    </fieldset>
+  </section>
+
+  <div id="menu" class="wrap">
+    <!-- PRICES: edit the numbers in the <b> tags below. Nothing else needs to change. -->
+
+    <h2 class="menu-title">Pick your craving</h2>
+    <p class="menu-hint">Tap + on any dish to build your order, then send it to us on WhatsApp.</p>
+    <div class="tabs">
+      <div class="tablist" role="tablist" aria-label="Menu categories">
+        <span class="tab-ind" aria-hidden="true"></span>
+        <button class="tab" role="tab" id="tab-salad" aria-controls="p-salad" aria-selected="true" tabindex="0" type="button">Salad Bowls</button>
+        <button class="tab" role="tab" id="tab-noodles" aria-controls="p-noodles" aria-selected="false" tabindex="-1" type="button">Noodles</button>
+        <button class="tab" role="tab" id="tab-buldak" aria-controls="p-buldak" aria-selected="false" tabindex="-1" type="button">Buldak</button>
+        <button class="tab" role="tab" id="tab-penne" aria-controls="p-penne" aria-selected="false" tabindex="-1" type="button">Penne Pasta</button>
+        <button class="tab" role="tab" id="tab-wings" aria-controls="p-wings" aria-selected="false" tabindex="-1" type="button">Wings</button>
+        <button class="tab" role="tab" id="tab-mozz" aria-controls="p-mozz" aria-selected="false" tabindex="-1" type="button">Mozzarella Sticks</button>
+        <button class="tab" role="tab" id="tab-drinks" aria-controls="p-drinks" aria-selected="false" tabindex="-1" type="button">Drinks &amp; Desserts</button>
+      </div>
+    </div>
+    <div class="panels">
+
+    <section class="cat panel is-active" id="p-salad" role="tabpanel" aria-labelledby="tab-salad" tabindex="0">
+      <figure class="shot"><img src="images/salad.webp" width="1100" height="619" loading="lazy" alt="Salad bowl with grilled chicken, tomatoes, cucumber and creamy sauce"></figure>
+      <div class="card">
+        <h2 id="t-salad">Salad Bowls</h2>
+        <p class="lede">Crisp, colourful and finished with our special sauce.</p>
+        <ul class="prices">
+          <li><span>Mini Salad Bowl</span><b>GHS 30</b></li>
+          <li><span>Classic Salad Bowl</span><b>GHS 50</b></li>
+          <li><span>Cluck Chicken Salad Bowl</span><b>GHS 70</b></li>
+        </ul>
+        <p class="note">Fresh vegetables, protein and our special sauce.</p>
+      </div>
+    </section>
+
+    <section class="cat flip panel" id="p-noodles" data-spice role="tabpanel" aria-labelledby="tab-noodles" tabindex="0">
+      <figure class="shot"><img src="images/noodles.webp" width="1100" height="619" loading="lazy" alt="Craving noodles loaded with prawns, grilled chicken and peppers"></figure>
+      <div class="card">
+        <h2 id="t-noodles">Noodles / Stir Fry Pasta</h2>
+        <p class="lede">Stir-fried hot and loaded with flavour.</p>
+        <ul class="prices">
+          <li><span>Regular Noodles</span><b>GHS 30</b></li>
+          <li><span>Mini Craving Noodles</span><b>GHS 40</b></li>
+          <li><span>Classic Craving Noodles</span><b>GHS 50</b></li>
+          <li><span>Cluck Craving Noodles</span><b>GHS 70</b></li>
+          <li><span>OG Craving</span><b>GHS 100</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cat panel" id="p-buldak" data-spice data-prefix="Buldak" role="tabpanel" aria-labelledby="tab-buldak" tabindex="0">
+      <figure class="shot"><img src="images/buldak.webp" width="1100" height="619" loading="lazy" alt="Fiery red buldak noodles topped with sesame seeds and spring onion"></figure>
+      <div class="card">
+        <h2 id="t-buldak">Buldak Noodles</h2>
+        <p class="lede">Glossy, red and made for people who like it hot.</p>
+        <ul class="prices">
+          <li><span>Fire Craving</span><b>GHS 70</b></li>
+          <li><span>RisBuld</span><b>GHS 100</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cat flip panel" id="p-penne" data-spice data-prefix="Penne" role="tabpanel" aria-labelledby="tab-penne" tabindex="0">
+      <figure class="shot"><img src="images/penne.webp" width="553" height="535" loading="lazy" alt="A plate of penne pasta in a rich red sauce with meat and peppers"></figure>
+      <div class="card">
+        <h2 id="t-penne">Penne Pasta Bowl</h2>
+        <p class="lede">Hearty, saucy and served hot.</p>
+        <ul class="prices">
+          <li><span>Small Bowl</span><b>GHS 40</b></li>
+          <li><span>Regular Bowl</span><b>GHS 70</b></li>
+        </ul>
+        <p class="note">With chicken or turkey.</p>
+      </div>
+    </section>
+
+    <section class="cat panel" id="p-wings" data-spice data-prefix="Chicken Wings" role="tabpanel" aria-labelledby="tab-wings" tabindex="0">
+      <figure class="shot"><img src="images/wings.webp" width="1100" height="619" loading="lazy" alt="Plate of glossy sauced chicken wings with sesame and spring onion"></figure>
+      <div class="card">
+        <h2 id="t-wings">Chicken Wings</h2>
+        <p class="lede">Sticky, saucy and impossible to eat politely.</p>
+        <ul class="prices">
+          <li><span>5 Pieces</span><b>GHS 50</b></li>
+          <li><span>10 Pieces</span><b>GHS 100</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cat flip panel" id="p-mozz" data-prefix="Mozzarella Sticks" role="tabpanel" aria-labelledby="tab-mozz" tabindex="0">
+      <figure class="shot"><img src="images/mozzarella.webp" width="1100" height="619" loading="lazy" alt="Golden mozzarella sticks with a long cheese pull and dipping sauce"></figure>
+      <div class="card">
+        <h2 id="t-mozz">Mozzarella Sticks</h2>
+        <p class="lede">Crunchy outside, stretchy inside.</p>
+        <ul class="prices">
+          <li><span>5 Pieces</span><b>GHS 60</b></li>
+          <li><span>10 Pieces</span><b>GHS 115</b></li>
+        </ul>
+        <p class="note">Comes with a special sauce.</p>
+      </div>
+    </section>
+
+    <section class="cat panel" id="p-drinks" role="tabpanel" aria-labelledby="tab-drinks" tabindex="0">
+      <figure class="shot"><img src="images/drinks.webp" width="1100" height="619" loading="lazy" alt="A fruit and granola parfait, an iced red sobolo drink and a creamy chilled drink"></figure>
+      <div class="card">
+        <h2 id="t-drinks">Drinks &amp; Desserts</h2>
+        <p class="lede">Something cold and sweet to finish.</p>
+        <ul class="prices">
+          <li><span>Ice Kenkey</span><b>GHS 15</b></li>
+          <li><span>Sobolo</span><b>GHS 10</b></li>
+          <li><span>Pineapple Juice</span><b>GHS 15</b></li>
+          <li><span>Sweet Sago Cloud</span><b>GHS 50</b></li>
+          <li><span>Parfait</span><b>GHS 50</b></li>
+        </ul>
+        <p class="note">Parfait: yogurt, granola and fruits.</p>
+      </div>
+    </section>
+
+    </div>
+
+    <section class="extras" data-prefix="Extra" aria-labelledby="t-extras">
+      <h2 id="t-extras">Extras</h2>
+      <ul class="prices">
+        <li><span>Sausage</span><b>GHS 5</b></li>
+        <li><span>Egg</span><b>GHS 5</b></li>
+        <li><span>Chicken</span><b>GHS 15</b></li>
+        <li><span>Fries</span><b>GHS 25</b></li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="info" id="order" aria-labelledby="t-order">
+    <div class="wrap">
+      <h2 id="t-order">Ready when you are</h2>
+      <div class="grid">
+        <div><h3>Delivery only</h3><p>We bring it to you. Message us your location and we’ll confirm.</p></div>
+        <div><h3>Hours</h3><p>Friday to Sunday<br>12:00pm to 8:00pm</p></div>
+        <div><h3>Allergies</h3><p>Please tell us if you are allergic to anything when you order.</p></div>
+      </div>
+      <a class="btn btn-gold" data-wa="" href="https://wa.me/233241280476">Order on WhatsApp: 024 128 0476</a>
+      <p style="margin-top:1rem"><a href="tel:+233241280476">Or call 024 128 0476</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="images/logo-small.webp" width="360" height="248" alt="RISA" loading="lazy">
+    <!-- TODO: replace both placeholder links with RISA's real Instagram and TikTok pages -->
+    <p><a href="https://www.instagram.com/" rel="noopener" target="_blank">Instagram</a> <a href="https://www.tiktok.com/" rel="noopener" target="_blank">TikTok</a></p>
+    <!-- TODO (optional): add a Google Maps link here if RISA wants one. Not needed for delivery only. -->
+    <p>Thank you for choosing RISA. © 2026 RISA</p>
+  </div>
+</footer>
+
+<div class="dock">
+  <a class="btn btn-gold cart-trigger" data-dock data-wa="" href="https://wa.me/233241280476">Order on WhatsApp</a>
+  <a class="btn btn-line" href="tel:+233241280476">Call</a>
+</div>
+
+<div id="live" class="sr-only" aria-live="polite"></div>
+<dialog id="cart" aria-labelledby="cart-title">
+  <div class="cart-head"><h2 id="cart-title">Your order</h2><button class="x" type="button" aria-label="Close your order">&times;</button></div>
+  <div class="cart-body">
+    <p id="cart-empty">Nothing here yet. Tap + on any dish to add it.</p>
+    <ul id="cart-list"></ul>
+  </div>
+  <div class="cart-foot">
+    <label for="cart-notes">Notes (optional)</label>
+    <textarea id="cart-notes" rows="2" maxlength="200" placeholder="Allergies or anything else we should know"></textarea>
+    <p class="sum"><span>Subtotal</span><b id="cart-total">GHS 0</b></p>
+    <p class="small">Delivery fee is not included.</p>
+    <a id="cart-send" class="btn btn-gold" href="#" target="_blank" rel="noopener">Send order on WhatsApp</a>
+    <button id="cart-clear" class="linkbtn" type="button">Clear order</button>
+  </div>
+</dialog>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
